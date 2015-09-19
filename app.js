@@ -1,12 +1,20 @@
 var mongoose = require('mongoose');
 var express = require('express');
-var routes = require('./routes');
 
+// add mongoose query and promise support to express
+require('express-mongoose');
+
+var models = require('./models');
+var routes = require('./routes');
+var middleware = require('./middleware');
+
+mongoose.set('debug', true);
 mongoose.connect('mongodb://localhost', function(err) {
 	if(err) throw err;
 	console.log('connected!');
 
 	var app = express();
+	middleware(app);
 	routes(app);
 
 	app.listen(3000, function() {

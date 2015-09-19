@@ -19,7 +19,9 @@
   "homepage": "https://github.com/Cryptolemming/mongo_blog_example#readme",
   "dependencies": {
     "express": "^4.13.3",
+    "express-mongoose": "^0.1.0",
     "jade": "^1.11.0",
-    "mongoose": "^4.1.7"
+    "mongoose": "^4.1.7",
+    "mongoose-lifecycle": "^1.0.0"
   }
 }
