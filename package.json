@@ -1,0 +1,24 @@
+{
+  "name": "mongo_blog_example",
+  "private": true,
+  "version": "1.0.0",
+  "description": "MongoDB University Chapter 7 Mongoose blog walkthrough",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cryptolemming/mongo_blog_example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cryptolemming/mongo_blog_example/issues"
+  },
+  "homepage": "https://github.com/Cryptolemming/mongo_blog_example#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "mongoose": "^4.1.7"
+  }
+}
